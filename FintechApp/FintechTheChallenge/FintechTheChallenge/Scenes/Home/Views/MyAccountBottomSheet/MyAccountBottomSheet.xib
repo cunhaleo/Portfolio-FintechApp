@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-SemiBold.otf">
+            <string>Inter-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyAccountBottomSheet" customModule="FintechTheChallenge" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonMyCard" destination="aGo-af-Ytq" id="wSq-Py-PyB"/>
+                <outlet property="contentView" destination="RxZ-r5-sdi" id="aKv-l8-gWs"/>
+                <outlet property="imageViewClient" destination="vlO-kT-miD" id="6mk-9g-aoZ"/>
+                <outlet property="labelAccountAndDevice" destination="zdg-d9-hox" id="1hW-3Z-CBA"/>
+                <outlet property="labelName" destination="216-Fz-IGg" id="DeD-CZ-1Do"/>
+                <outlet property="labelPhrase" destination="wgj-tg-2OF" id="Ij3-kl-o6r"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RxZ-r5-sdi">
+                    <rect key="frame" x="0.0" y="382" width="414" height="514"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vlO-kT-miD">
+                            <rect key="frame" x="128" y="57" width="158" height="158"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="158" id="mHf-aM-ZTJ"/>
+                                <constraint firstAttribute="width" constant="158" id="oUc-X8-uzD"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="216-Fz-IGg">
+                            <rect key="frame" x="167.5" y="237" width="79" height="36.5"/>
+                            <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="30"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdg-d9-hox">
+                            <rect key="frame" x="186" y="273.5" width="42" height="19.5"/>
+                            <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgj-tg-2OF">
+                            <rect key="frame" x="186" y="326" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGo-af-Ytq">
+                            <rect key="frame" x="25" y="391" width="364" height="50"/>
+                            <color key="backgroundColor" red="0.2274509804" green="0.81176470590000005" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="4dd-wD-43d"/>
+                            </constraints>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Meu cartão">
+                                <fontDescription key="titleFontDescription" name="Inter-SemiBold" family="Inter" pointSize="18"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="handleMyCardButton:" destination="-1" eventType="touchUpInside" id="pFW-0R-4PT"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="aGo-af-Ytq" secondAttribute="trailing" constant="25" id="1hw-Gz-USX"/>
+                        <constraint firstAttribute="bottom" secondItem="aGo-af-Ytq" secondAttribute="bottom" constant="73" id="2sf-iL-tZX"/>
+                        <constraint firstItem="aGo-af-Ytq" firstAttribute="top" secondItem="wgj-tg-2OF" secondAttribute="bottom" constant="44" id="JhJ-JO-SJp"/>
+                        <constraint firstItem="216-Fz-IGg" firstAttribute="top" secondItem="vlO-kT-miD" secondAttribute="bottom" constant="22" id="OUV-QW-TzZ"/>
+                        <constraint firstItem="aGo-af-Ytq" firstAttribute="leading" secondItem="RxZ-r5-sdi" secondAttribute="leading" constant="25" id="Sza-Vo-QcV"/>
+                        <constraint firstItem="vlO-kT-miD" firstAttribute="centerX" secondItem="RxZ-r5-sdi" secondAttribute="centerX" id="XoP-rl-ujx"/>
+                        <constraint firstItem="vlO-kT-miD" firstAttribute="top" secondItem="RxZ-r5-sdi" secondAttribute="top" constant="57" id="atS-rN-pAN"/>
+                        <constraint firstItem="zdg-d9-hox" firstAttribute="centerX" secondItem="RxZ-r5-sdi" secondAttribute="centerX" id="b47-nq-i7f"/>
+                        <constraint firstItem="wgj-tg-2OF" firstAttribute="centerX" secondItem="RxZ-r5-sdi" secondAttribute="centerX" id="jkX-kz-gjp"/>
+                        <constraint firstItem="216-Fz-IGg" firstAttribute="centerX" secondItem="RxZ-r5-sdi" secondAttribute="centerX" id="pd7-4c-YYP"/>
+                        <constraint firstItem="zdg-d9-hox" firstAttribute="top" secondItem="216-Fz-IGg" secondAttribute="bottom" id="qrJ-Ka-V1Y"/>
+                        <constraint firstItem="wgj-tg-2OF" firstAttribute="top" secondItem="zdg-d9-hox" secondAttribute="bottom" constant="33" id="xNR-RI-HTE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="RxZ-r5-sdi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Dx3-8w-lis"/>
+                <constraint firstAttribute="bottom" secondItem="RxZ-r5-sdi" secondAttribute="bottom" id="WzJ-6i-W8p"/>
+                <constraint firstAttribute="trailing" secondItem="RxZ-r5-sdi" secondAttribute="trailing" id="uTO-Gb-zdp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="78.348214285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
