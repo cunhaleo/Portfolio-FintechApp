@@ -46,7 +46,9 @@ final class LoginViewController: UIViewController {
     
     // MARK: Actions
     @IBAction func handlerSignInButton(_ sender: Any) {
-        viewModel.getService(login: "usemobile", password: "useop")
+        let login = textFieldUser.text ?? ""
+        let password = textFieldPassword.text ?? "
+        viewModel.getService(login: login, password: password)
     }
     
     @IBAction func handlerShowPasswordButton(_ sender: Any) {
