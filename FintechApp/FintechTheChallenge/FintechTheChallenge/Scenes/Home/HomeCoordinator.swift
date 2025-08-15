@@ -23,7 +23,7 @@ final class HomeCoordinator: Coordinator {
     func start() {
         let viewController = HomeContainerViewController()
         viewController.coordinator = self
-        navigationController.pushViewController(viewController, animated: true)
+        navigationController.pushViewController(viewController, animated: false)
     }
     
     func goToLoginIfHasNoSession() {

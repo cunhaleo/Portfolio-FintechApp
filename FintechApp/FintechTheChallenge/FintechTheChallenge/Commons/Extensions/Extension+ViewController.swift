@@ -18,7 +18,7 @@ public extension UIViewController {
     }
     
     func dismissProgressScreen() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        DispatchQueue.main.async {
             self.dismiss(animated: true, completion: nil)
         }
     }
