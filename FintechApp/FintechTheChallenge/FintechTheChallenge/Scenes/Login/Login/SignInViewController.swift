@@ -1,5 +1,5 @@
 //
-//  SignInViewController.swift
+//  LoginViewController.swift
 //  GerencianetChallenge
 //
 //  Created by Leonardo Cunha on 02/12/21.
@@ -8,10 +8,10 @@
 import UIKit
 import Lottie
 
-final class SignInViewController: UIViewController {
+final class LoginViewController: UIViewController {
     // MARK: Properties
-    private var viewModel: SignInViewModel
-    var coordinator: LoginCoordinator?
+    private var viewModel: LoginViewModel
+    var coordinator: AppCoordinator?
     private var isPasswordShowing = false {
         didSet {
             textFieldPassword.isSecureTextEntry.toggle()
@@ -28,7 +28,7 @@ final class SignInViewController: UIViewController {
     @IBOutlet weak var textFieldPassword: UITextField!
     
     // MARK: Initialization
-    init(viewModel: SignInViewModel = SignInViewModel()) {
+    init(viewModel: LoginViewModel = LoginViewModel()) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -46,7 +46,9 @@ final class SignInViewController: UIViewController {
     
     // MARK: Actions
     @IBAction func handlerSignInButton(_ sender: Any) {
-        viewModel.getService(login: "usemobile", password: "useop")
+        let login = textFieldUser.text ?? ""
+        let password = textFieldPassword.text ?? ""
+        viewModel.getService(login: login, password: password)
     }
     
     @IBAction func handlerShowPasswordButton(_ sender: Any) {
@@ -75,7 +77,7 @@ final class SignInViewController: UIViewController {
         
         viewModel.handleSuccess = { [weak self] in
             DispatchQueue.main.async {
-                self?.coordinator?.goToHomeIfHasSession()
+                self?.coordinator?.start()
             }
         }
     }

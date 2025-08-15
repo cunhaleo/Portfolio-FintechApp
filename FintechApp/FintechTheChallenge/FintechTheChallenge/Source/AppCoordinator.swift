@@ -22,12 +22,21 @@ final class AppCoordinator: Coordinator {
     // MARK: Methods
     func start() {
         if UserSessionManager.shared.hasSession {
-            let homeCoordinator = HomeCoordinator(navigationController)
-            homeCoordinator.start()
+            goToHome()
         } else {
-            let loginCoordinator = LoginCoordinator(navigationController)
-            loginCoordinator.start()
+            goToLogin()
         }
         UIApplication.switchRootViewController(navigationController, animated: true, completion: nil)
+    }
+    
+    func goToHome() {
+        let homeCoordinator = HomeCoordinator(navigationController)
+        homeCoordinator.start()
+    }
+    
+    func goToLogin() {
+        let loginViewController = LoginViewController()
+        navigationController = UINavigationController(rootViewController: loginViewController)
+        loginViewController.coordinator = self
     }
 }

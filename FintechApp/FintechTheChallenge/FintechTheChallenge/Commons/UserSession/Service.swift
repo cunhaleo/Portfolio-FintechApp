@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class Service {
+class Service {
     // MARK: Properties
     var shouldShowProgressScreen: ((Bool) -> Void)?
     var shouldShowHome: (() -> Void)?
