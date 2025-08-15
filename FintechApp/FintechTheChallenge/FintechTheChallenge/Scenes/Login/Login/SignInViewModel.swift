@@ -1,5 +1,5 @@
 //
-//  SignInViewModel.swift
+//  LoginViewModel.swift
 //  GerencianetChallenge
 //
 //  Created by Leonardo Cunha on 03/12/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class SignInViewModel {
+final class LoginViewModel {
     // MARK: Properties
     private var service: Service
     var shouldShowProgressScreen: ((Bool) -> Void)?

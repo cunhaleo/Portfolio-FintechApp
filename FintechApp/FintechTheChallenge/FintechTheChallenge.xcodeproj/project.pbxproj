@@ -67,7 +67,7 @@
 		FC95186B2759033700533F91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC95186A2759033700533F91 /* Assets.xcassets */; };
 		FC95186E2759033700533F91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC95186C2759033700533F91 /* LaunchScreen.storyboard */; };
 		FC95187D275908A100533F91 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC95187B275908A100533F91 /* SignInViewController.swift */; };
-		FC95187E275908A100533F91 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC95187C275908A100533F91 /* SignInViewController.xib */; };
+		FC95187E275908A100533F91 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC95187C275908A100533F91 /* LoginViewController.xib */; };
 		FC9518812759535B00533F91 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9518802759535B00533F91 /* Service.swift */; };
 		FC951883275AA60100533F91 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC951882275AA60100533F91 /* SignInViewModel.swift */; };
 		FC9FBA94284A4F80009FEB74 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9FBA92284A4F80009FEB74 /* CustomAlertViewController.swift */; };
@@ -81,7 +81,6 @@
 		FCC70A9327628F81008E2438 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC70A9227628F81008E2438 /* HomeCoordinator.swift */; };
 		FCC70A95276296C1008E2438 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC70A94276296C1008E2438 /* AppCoordinator.swift */; };
 		FCC70A97276299F5008E2438 /* UserSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC70A96276299F5008E2438 /* UserSessionManager.swift */; };
-		FCC70A992762A4AB008E2438 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC70A982762A4AB008E2438 /* LoginCoordinator.swift */; };
 		FCCF2A8F278CBA6B00457399 /* CheckInTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCF2A8D278CBA6B00457399 /* CheckInTableViewCell.swift */; };
 		FCCF2A90278CBA6B00457399 /* CheckInTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCCF2A8E278CBA6B00457399 /* CheckInTableViewCell.xib */; };
 		FCCF2A92278CBC6F00457399 /* CheckInHistoricViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCF2A91278CBC6F00457399 /* CheckInHistoricViewModel.swift */; };
@@ -163,7 +162,7 @@
 		FC95186D2759033700533F91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC95186F2759033700533F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC95187B275908A100533F91 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		FC95187C275908A100533F91 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		FC95187C275908A100533F91 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		FC9518802759535B00533F91 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		FC951882275AA60100533F91 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		FC9FBA92284A4F80009FEB74 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
@@ -177,7 +176,6 @@
 		FCC70A9227628F81008E2438 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		FCC70A94276296C1008E2438 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		FCC70A96276299F5008E2438 /* UserSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionManager.swift; sourceTree = "<group>"; };
-		FCC70A982762A4AB008E2438 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		FCCF2A8D278CBA6B00457399 /* CheckInTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInTableViewCell.swift; sourceTree = "<group>"; };
 		FCCF2A8E278CBA6B00457399 /* CheckInTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckInTableViewCell.xib; sourceTree = "<group>"; };
 		FCCF2A91278CBC6F00457399 /* CheckInHistoricViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInHistoricViewModel.swift; sourceTree = "<group>"; };
@@ -499,9 +497,8 @@
 		FC95187A2759075300533F91 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				FCC70A982762A4AB008E2438 /* LoginCoordinator.swift */,
 				FCDAFE3A27726EF1008364AF /* SignUp */,
-				FCDAFE3927726EE9008364AF /* SignIn */,
+				FCDAFE3927726EE9008364AF /* Login */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -542,14 +539,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		FCDAFE3927726EE9008364AF /* SignIn */ = {
+		FCDAFE3927726EE9008364AF /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				FC951882275AA60100533F91 /* SignInViewModel.swift */,
 				FC95187B275908A100533F91 /* SignInViewController.swift */,
-				FC95187C275908A100533F91 /* SignInViewController.xib */,
+				FC95187C275908A100533F91 /* LoginViewController.xib */,
 			);
-			path = SignIn;
+			path = Login;
 			sourceTree = "<group>";
 		};
 		FCDAFE3A27726EF1008364AF /* SignUp */ = {
@@ -653,7 +650,7 @@
 				FC76E2DE28980CDC00795CD0 /* Inter-Light.otf in Resources */,
 				FCCF2A90278CBA6B00457399 /* CheckInTableViewCell.xib in Resources */,
 				FC4E50F528DCB07400B9CE02 /* MyAccountBottomSheet.xib in Resources */,
-				FC95187E275908A100533F91 /* SignInViewController.xib in Resources */,
+				FC95187E275908A100533F91 /* LoginViewController.xib in Resources */,
 				FC76E2DB28980CDC00795CD0 /* Inter-Regular.otf in Resources */,
 				FC95186B2759033700533F91 /* Assets.xcassets in Resources */,
 				FC35B733275E576A002D0527 /* ProgressViewController.xib in Resources */,
@@ -771,7 +768,6 @@
 				FC709A7C28D0C50300EDDD12 /* BaseViewController.swift in Sources */,
 				FC08897827877FA1007FDD2F /* MyCardModel.swift in Sources */,
 				FCEFF4CB28528D560072B930 /* HomeContainerViewController.swift in Sources */,
-				FCC70A992762A4AB008E2438 /* LoginCoordinator.swift in Sources */,
 				90767E8B2E4FB9BE0091BF62 /* ServiceMock.swift in Sources */,
 				FC1673FA27E411FE0009F3B9 /* BottomSheetViewController.swift in Sources */,
 				FC184037288B1C3300658CE2 /* SideMenuUserView.swift in Sources */,

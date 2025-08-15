@@ -20,9 +20,7 @@ final class ServiceMock: Service {
     lazy var userModel: UserModel = UserModel(userInfo: userInfo,
                                               userCredentials: userCredentials,
                                               hasNotification: true)
-    
     //MARK: - Overrides
-    
     
     override func loginUser(login: String,
                             password: String,
