@@ -16,7 +16,7 @@ final class SignInViewModel {
     var handleError: ((String) -> Void)?
     
     // MARK: Initialization
-    init(service: Service = Service()) {
+    init(service: Service = ServiceMock()) {
         self.service = service
     }
     
