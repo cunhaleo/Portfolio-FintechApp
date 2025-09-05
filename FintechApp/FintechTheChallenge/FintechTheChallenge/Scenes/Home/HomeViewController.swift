@@ -20,10 +20,10 @@ extension HomeViewController.Layout {
     }
 
     enum AlertTexts {
-        static let title = "Avalie nosso App!"
-        static let message = "Você nos ajuda demais, tanto mostrando que gostou do aplicativo, quanto deixando um feedback de algo que podemos melhorar."
-        static let primaryButton = "Eu amei!"
-        static let secondaryButton = "Não está satisfeito?\nComo podemos melhorar?"
+        static let title = "Gostando do App?"
+        static let message = "Avalie-nos na App Store e ajude outros usuários a nos encontrar!"
+        static let primaryButton = "Avaliar"
+        static let secondaryButton = "Agora não, obrigado!"
     }
 
 }
@@ -69,8 +69,9 @@ final class HomeViewController: BaseViewController, UIViewControllerTransitionin
         } else {
             viewOverlapBalance.fadeIn()
         }
-        imageViewEye.image = viewOverlapBalance.alpha == 1 ? UIImage(named: "cuttedEye") : UIImage(named: "Eye")
+        updateEyeImage()
     }
+
     @IBAction func handleMyCardButton(_ sender: Any) {
         coordinator?.goToMyCardViewController()
     }
@@ -85,7 +86,7 @@ final class HomeViewController: BaseViewController, UIViewControllerTransitionin
     
     // MARK: Methods
     private func setupUI() {
-        imageViewEye.image = UIImage(named: "cuttedEye")
+        imageViewEye.image = UIImage(named: "cuttedEye")?.imageWithColor(color: UIColor.secondaryColor())
         viewOverlapBalance.layer.cornerRadius = 5
         let firstName = viewModel.getUserFirstName()
         let accountCode = viewModel.model.accountCode
@@ -94,8 +95,9 @@ final class HomeViewController: BaseViewController, UIViewControllerTransitionin
     }
     
     private func setupHomeNavigationBar() {
-        let logo = UIImage(named: "logoSmall_usemobile")
+        let logo = UIImage(named: "smallLogoFintech")
         let imageView = UIImageView(image: logo)
+        imageView.contentMode = .scaleAspectFill
         self.navigationItem.titleView = imageView
         self.navigationController?.navigationBar.barTintColor = UIColor.primaryColor()
         self.navigationController?.navigationBar.backgroundColor = UIColor.primaryColor()
@@ -120,6 +122,12 @@ final class HomeViewController: BaseViewController, UIViewControllerTransitionin
             self.navigationController?.navigationBar.standardAppearance = appearance
             self.navigationController?.navigationBar.scrollEdgeAppearance = appearance
         }
+    }
+    
+    private func updateEyeImage() {
+        let imageCuttedEye = UIImage(named: "cuttedEye")?.imageWithColor(color: UIColor.secondaryColor())
+        let imageEye = UIImage(named: "Eye")?.imageWithColor(color: UIColor.secondaryColor())
+        imageViewEye.image = viewOverlapBalance.alpha == 1 ? imageCuttedEye : imageEye
     }
     
     private func setupCollectionView() {

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomAlertViewController" customModule="GerencianetChallenge" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomAlertViewController" customModule="FintechTheChallenge" customModuleProvider="target">
             <connections>
                 <outlet property="buttonPrimary" destination="9eX-Ek-5Dr" id="Z9o-4f-EMV"/>
                 <outlet property="buttonSecondary" destination="eI6-3f-JMN" id="FJw-YZ-l4a"/>
@@ -33,10 +33,10 @@
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3if-ma-374">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <rect key="frame" x="0.0" y="48" width="414" height="814"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cr1-Do-bfD">
-                            <rect key="frame" x="30" y="167" width="354" height="484.5"/>
+                            <rect key="frame" x="30" y="178.5" width="354" height="457.5"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCc-Zt-SAW">
                                     <rect key="frame" x="15" y="123" width="324" height="162.5"/>
@@ -52,7 +52,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9eX-Ek-5Dr">
-                                    <rect key="frame" x="30" y="347.5" width="294" height="51"/>
+                                    <rect key="frame" x="30" y="320.5" width="294" height="51"/>
                                     <color key="backgroundColor" name="PrimaryColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="51" id="EMO-0w-POo"/>
@@ -65,7 +65,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eI6-3f-JMN">
-                                    <rect key="frame" x="30" y="411.5" width="294" height="51"/>
+                                    <rect key="frame" x="30" y="384.5" width="294" height="51"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="51" id="bqQ-gY-GdV"/>
                                     </constraints>
@@ -99,7 +99,7 @@
                                 <constraint firstItem="9eX-Ek-5Dr" firstAttribute="leading" secondItem="cr1-Do-bfD" secondAttribute="leading" constant="30" id="blp-5j-TNb"/>
                                 <constraint firstItem="iCc-Zt-SAW" firstAttribute="leading" secondItem="cr1-Do-bfD" secondAttribute="leading" constant="15" id="fzR-se-dyn"/>
                                 <constraint firstAttribute="trailing" secondItem="9eX-Ek-5Dr" secondAttribute="trailing" constant="30" id="g0u-xX-gFL"/>
-                                <constraint firstItem="9eX-Ek-5Dr" firstAttribute="top" secondItem="iCc-Zt-SAW" secondAttribute="bottom" constant="62" id="iDp-bj-Fzd"/>
+                                <constraint firstItem="9eX-Ek-5Dr" firstAttribute="top" secondItem="iCc-Zt-SAW" secondAttribute="bottom" constant="35" id="iDp-bj-Fzd"/>
                                 <constraint firstItem="K5L-je-ary" firstAttribute="top" secondItem="cr1-Do-bfD" secondAttribute="top" constant="25" id="kCc-hW-zua"/>
                                 <constraint firstItem="eI6-3f-JMN" firstAttribute="leading" secondItem="cr1-Do-bfD" secondAttribute="leading" constant="30" id="r3n-q9-WmD"/>
                             </constraints>
@@ -131,10 +131,10 @@
     </objects>
     <resources>
         <namedColor name="PrimaryColor">
-            <color red="0.22699999809265137" green="0.81199997663497925" blue="0.92900002002716064" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="SecondaryColor">
-            <color red="0.082000002264976501" green="0.54500001668930054" blue="0.74900001287460327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.023529411764705882" green="0.396078431372549" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

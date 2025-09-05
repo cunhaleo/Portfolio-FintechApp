@@ -50,8 +50,8 @@ final class SideMenuViewController: UIViewController {
     private lazy var header: SideMenuHeaderView = {
         let header = SideMenuHeaderView()
         header.translatesAutoresizingMaskIntoConstraints = false
-        header.title = "Usemobile"
-        header.topDescription = "Challenge"
+        header.title = "Desafio"
+        header.topDescription = "Fintech"
         header.backgroundColor = UIColor.primaryColor()
         return header
     }()
@@ -71,7 +71,7 @@ final class SideMenuViewController: UIViewController {
     private lazy var macroViewCheckInHistory: SideMenuMacroItemView = {
         let macroItem = SideMenuMacroItemView()
         macroItem.translatesAutoresizingMaskIntoConstraints = false
-        macroItem.addLeftImage(UIImage(named: "icon_apple")?.imageWithColor(color: UIColor.secondaryColor()) ?? UIImage())
+        macroItem.addLeftImage(UIImage(named: "icon_apple")?.imageWithColor(color: UIColor.darkGray) ?? UIImage())
         macroItem.descriptionText = "Histórico de Check-in"
         macroItem.didPressSingleItem = { [weak self] in
             self?.coordinator?.goToCheckInHistoricViewController()
@@ -82,7 +82,7 @@ final class SideMenuViewController: UIViewController {
     private lazy var macroViewMyClients: SideMenuMacroItemView = {
         let macroItem = SideMenuMacroItemView()
         macroItem.translatesAutoresizingMaskIntoConstraints = false
-        macroItem.addLeftImage(UIImage(named: "icon_apple")?.imageWithColor(color: UIColor.secondaryColor()) ?? UIImage())
+        macroItem.addLeftImage(UIImage(named: "icon_apple")?.imageWithColor(color: UIColor.darkGray) ?? UIImage())
         macroItem.descriptionText = "Meus clientes"
         macroItem.microItems = [microViewAddClient]
         return macroItem
@@ -101,7 +101,7 @@ final class SideMenuViewController: UIViewController {
     private lazy var macroViewQrCode: SideMenuMacroItemView = {
         let macroItem = SideMenuMacroItemView()
         macroItem.translatesAutoresizingMaskIntoConstraints = false
-        macroItem.addLeftImage(UIImage(named: "icon_apple")?.imageWithColor(color: UIColor.secondaryColor()) ?? UIImage())
+        macroItem.addLeftImage(UIImage(named: "icon_apple")?.imageWithColor(color: UIColor.darkGray) ?? UIImage())
         macroItem.descriptionText = "QR Code"
         macroItem.microItems = [microViewReadQrCode, microViewWriteQrCode]
         return macroItem
@@ -130,7 +130,7 @@ final class SideMenuViewController: UIViewController {
     private lazy var macroViewAboutApp: SideMenuMacroItemView = {
        let macroItem = SideMenuMacroItemView()
         macroItem.translatesAutoresizingMaskIntoConstraints = false
-        macroItem.addLeftImage(UIImage(named: "icon_apple")?.imageWithColor(color: UIColor.secondaryColor()) ?? UIImage())
+        macroItem.addLeftImage(UIImage(named: "icon_apple")?.imageWithColor(color: UIColor.darkGray) ?? UIImage())
         macroItem.descriptionText = "Sobre o app"
         macroItem.didPressSingleItem = { [weak self] in
             self?.coordinator?.goToAboutAppViewController()
