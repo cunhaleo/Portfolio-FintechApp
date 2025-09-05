@@ -86,7 +86,7 @@ final class LoginViewController: UIViewController {
     
     private func signInButtonSetup() {
         buttonSignIn.isEnabled = viewModel.areSignInTextFieldsFilled(user: textFieldUser.text ?? "", password: textFieldPassword.text ?? "")
-        buttonSignIn.backgroundColor = buttonSignIn.isEnabled ? uiColorCyan() : uiColorLightGray()
+        buttonSignIn.backgroundColor = buttonSignIn.isEnabled ? UIColor.secondaryColor() : uiColorLightGray()
     }
     
     private func setupUI() {

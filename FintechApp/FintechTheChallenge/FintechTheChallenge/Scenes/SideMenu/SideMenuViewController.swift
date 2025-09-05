@@ -50,8 +50,8 @@ final class SideMenuViewController: UIViewController {
     private lazy var header: SideMenuHeaderView = {
         let header = SideMenuHeaderView()
         header.translatesAutoresizingMaskIntoConstraints = false
-        header.title = "Usemobile"
-        header.topDescription = "Challenge"
+        header.title = "Desafio"
+        header.topDescription = "Fintech"
         header.backgroundColor = UIColor.primaryColor()
         return header
     }()
