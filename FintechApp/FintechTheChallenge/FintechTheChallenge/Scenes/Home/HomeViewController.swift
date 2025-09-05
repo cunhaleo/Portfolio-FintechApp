@@ -23,7 +23,7 @@ extension HomeViewController.Layout {
         static let title = "Gostando do App?"
         static let message = "Ao nos avaliar na AppStore, você ajuda outras pessoas a nos encontrar!"
         static let primaryButton = "Avaliar"
-        static let secondaryButton = "Não está satisfeito?\nComo podemos melhorar?"
+        static let secondaryButton = "Agora não, obrigado!"
     }
 
 }

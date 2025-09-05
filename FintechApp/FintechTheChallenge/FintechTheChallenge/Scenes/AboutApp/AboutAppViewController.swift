@@ -37,6 +37,7 @@ final class AboutAppViewController: UIViewController {
         viewYourDevice.layer.borderColor = UIColor.lightGray.cgColor
         viewYourDevice.layer.cornerRadius = 20
         buttonUpdateApp.layer.cornerRadius = 25
+        buttonUpdateApp.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
     }
     
     private func setupDeviceSettings() {

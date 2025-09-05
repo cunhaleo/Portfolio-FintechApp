@@ -20,7 +20,7 @@ final class SideMenuMacroItemView: UIView {
             case .single:
                 imageViewRight.image = nil
             case .contracted:
-                imageViewRight.image = UIImage(systemName: "plus")?.withTintColor(UIColor.secondaryColor())
+                imageViewRight.image = UIImage(systemName: "plus")?.imageWithColor(color: UIColor.darkGray)
                 UIView.animate(withDuration: 0.3, delay: 0, options: .layoutSubviews) { [weak self] in
                     self?.microItems?.forEach({ microItem in
                         microItem.isHidden = true
@@ -29,7 +29,7 @@ final class SideMenuMacroItemView: UIView {
                 }
                 
             case .expanded:
-                imageViewRight.image = UIImage(systemName: "minus")?.withTintColor(UIColor.secondaryColor())
+                imageViewRight.image = UIImage(systemName: "minus")?.imageWithColor(color: UIColor.darkGray)
                 UIView.animate(withDuration: 0.3, delay: 0, options: .layoutSubviews) { [weak self] in
                     self?.microItems?.forEach({ microItem in
                         microItem.isHidden = false
@@ -85,7 +85,7 @@ final class SideMenuMacroItemView: UIView {
         let labelFirstLine = UILabel()
         labelFirstLine.translatesAutoresizingMaskIntoConstraints = false
         labelFirstLine.font = UIFont.interFamily(.medium, size: 19)
-        labelFirstLine.textColor = UIColor.secondaryColor()
+        labelFirstLine.textColor = UIColor.darkGray
         return labelFirstLine
     }()
     
@@ -95,7 +95,7 @@ final class SideMenuMacroItemView: UIView {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         stackView.spacing = 1
-        stackView.backgroundColor = UIColor.secondaryColor()
+        stackView.backgroundColor = UIColor.darkGray
         return stackView
     }()
     

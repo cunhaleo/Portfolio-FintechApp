@@ -27,7 +27,7 @@ class Toast {
     
     // MARK: Generic Toast Methods - Not Testable Spy Methods
     open func showSuccess(_ message: String, image: UIImage? = nil) {
-        show(message: message, withImage: image, backgroundColor: UIColor.forestGreen())
+        show(message: message, withImage: image, backgroundColor: UIColor.secondaryColor())
     }
     
     private func showError(_ message: String, image: UIImage? = nil) {
