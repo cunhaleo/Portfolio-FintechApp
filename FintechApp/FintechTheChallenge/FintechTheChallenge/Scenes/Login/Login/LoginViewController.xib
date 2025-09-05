@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="FintechTheChallenge" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="g3R-LE-eoU" id="nWf-87-uXi"/>
                 <outlet property="buttonShowPassword" destination="8Re-Qs-wqr" id="hEP-4b-jJp"/>
                 <outlet property="buttonSignIn" destination="b2a-sz-P32" id="WPU-OY-D8f"/>
                 <outlet property="labelInvalidUserPassword" destination="Odc-VR-eYA" id="oH8-1m-zfV"/>
@@ -101,6 +102,9 @@
                             <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="g3R-LE-eoU">
+                            <rect key="frame" x="197" y="400" width="20" height="20"/>
+                        </activityIndicatorView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
@@ -111,11 +115,13 @@
                         <constraint firstItem="iB6-cQ-eI6" firstAttribute="leading" secondItem="6iV-AZ-lfl" secondAttribute="leading" constant="15" id="GNF-O4-aYI"/>
                         <constraint firstAttribute="trailing" secondItem="b2a-sz-P32" secondAttribute="trailing" constant="15" id="KKb-hs-yqz"/>
                         <constraint firstItem="6Os-jk-pZR" firstAttribute="leading" secondItem="6iV-AZ-lfl" secondAttribute="leading" constant="15" id="Mdj-a9-cQf"/>
+                        <constraint firstItem="g3R-LE-eoU" firstAttribute="centerX" secondItem="6iV-AZ-lfl" secondAttribute="centerX" id="WeZ-bk-hSS"/>
                         <constraint firstItem="b2a-sz-P32" firstAttribute="top" secondItem="6Os-jk-pZR" secondAttribute="bottom" constant="70" id="dg3-sk-0zd"/>
                         <constraint firstItem="z5x-DU-5Cx" firstAttribute="centerX" secondItem="6iV-AZ-lfl" secondAttribute="centerX" id="f2a-tn-ooe"/>
                         <constraint firstItem="iB6-cQ-eI6" firstAttribute="top" secondItem="z5x-DU-5Cx" secondAttribute="bottom" constant="16" id="fIW-1A-1cg"/>
                         <constraint firstAttribute="trailing" secondItem="iB6-cQ-eI6" secondAttribute="trailing" constant="15" id="nde-jZ-jDR"/>
                         <constraint firstItem="z5x-DU-5Cx" firstAttribute="top" secondItem="6iV-AZ-lfl" secondAttribute="top" constant="79" id="omS-bL-7Wg"/>
+                        <constraint firstItem="b2a-sz-P32" firstAttribute="top" secondItem="g3R-LE-eoU" secondAttribute="bottom" constant="15" id="uPD-UW-JOM"/>
                         <constraint firstAttribute="trailing" secondItem="6Os-jk-pZR" secondAttribute="trailing" constant="15" id="vx2-WR-wXq"/>
                     </constraints>
                 </view>

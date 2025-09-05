@@ -26,6 +26,7 @@ final class LoginViewController: UIViewController {
     @IBOutlet weak var labelInvalidUserPassword: UILabel!
     @IBOutlet weak var textFieldUser: UITextField!
     @IBOutlet weak var textFieldPassword: UITextField!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     // MARK: Initialization
     init(viewModel: LoginViewModel = LoginViewModel()) {
@@ -66,7 +67,8 @@ final class LoginViewController: UIViewController {
     // MARK: Methods
     func bindEvents() {
         viewModel.shouldShowProgressScreen = { [weak self] shouldShow in
-            shouldShow ? self?.showProgressScreen() : self?.dismissProgressScreen()
+            shouldShow ? self?.activityIndicator.startAnimating() : self?.activityIndicator.stopAnimating()
+            
         }
         
         viewModel.handleError = { [weak self] _ in
@@ -90,5 +92,6 @@ final class LoginViewController: UIViewController {
     private func setupUI() {
         buttonSignIn.layer.cornerRadius = 25
         buttonSignIn.isEnabled = false
+        activityIndicator.hidesWhenStopped = true
     }
 }
