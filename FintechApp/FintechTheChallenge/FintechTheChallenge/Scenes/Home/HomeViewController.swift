@@ -20,9 +20,9 @@ extension HomeViewController.Layout {
     }
 
     enum AlertTexts {
-        static let title = "Avalie nosso App!"
-        static let message = "Você nos ajuda demais, tanto mostrando que gostou do aplicativo, quanto deixando um feedback de algo que podemos melhorar."
-        static let primaryButton = "Eu amei!"
+        static let title = "Gostando do App?"
+        static let message = "Ao nos avaliar na AppStore, você ajuda outras pessoas a nos encontrar!"
+        static let primaryButton = "Avaliar"
         static let secondaryButton = "Não está satisfeito?\nComo podemos melhorar?"
     }
 
