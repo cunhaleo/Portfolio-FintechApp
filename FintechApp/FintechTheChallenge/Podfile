@@ -6,5 +6,4 @@ target 'FintechTheChallenge' do
   use_frameworks!
 
   # Pods for FintechTheChallenge
-  pod 'lottie-ios'
 end

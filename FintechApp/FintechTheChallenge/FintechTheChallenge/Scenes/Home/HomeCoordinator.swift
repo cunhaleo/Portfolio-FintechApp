@@ -22,17 +22,23 @@ final class HomeCoordinator: Coordinator {
     // MARK: Methods
     func start() {
         let homeContainer = HomeContainerViewController()
-        navigationController.pushViewController(homeContainer, animated: false)
+        DispatchQueue.main.async {
+            self.addLoginAnimation()
+            self.navigationController.pushViewController(homeContainer, animated: false)
+        }
         homeContainer.coordinator = self
     }
     
     func goToLogin() {
         parentCoordinator?.finishChild(self)
-        navigationController.popToRootViewController(animated: false)
+        DispatchQueue.main.async {
+            self.addLogoutAnimation()
+            self.navigationController.popToRootViewController(animated: false)
+        }
     }
     
     func popToHome() {
-        navigationController.popToRootViewController(animated: true)
+        navigationController.popToRootViewController(animated: false)
     }
     
     func goToMyCardViewController() {
@@ -51,5 +57,21 @@ final class HomeCoordinator: Coordinator {
         let viewController = AboutAppViewController()
         viewController.coordinator = self
         navigationController.pushViewController(viewController, animated: true)
+    }
+    
+    private func addLogoutAnimation() {
+        let transition = CATransition()
+        transition.duration = 0.3
+        transition.type = .reveal
+        transition.subtype = .fromBottom
+        navigationController.view.layer.add(transition, forKey: kCATransition)
+    }
+    
+    private func addLoginAnimation() {
+        let transition = CATransition()
+        transition.duration = 0.3
+        transition.type = .reveal
+        transition.subtype = .fromTop
+        navigationController.view.layer.add(transition, forKey: kCATransition)
     }
 }
