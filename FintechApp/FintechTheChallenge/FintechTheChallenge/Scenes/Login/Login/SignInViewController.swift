@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Lottie
 
 final class LoginViewController: UIViewController {
     // MARK: Properties
