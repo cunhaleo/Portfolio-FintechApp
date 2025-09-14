@@ -11,7 +11,7 @@ import Lottie
 final class LoginViewController: UIViewController {
     // MARK: Properties
     private var viewModel: LoginViewModel
-    var coordinator: AppCoordinator?
+    weak var coordinator: LoginCoordinator?
     private var isPasswordShowing = false {
         didSet {
             textFieldPassword.isSecureTextEntry.toggle()
@@ -43,6 +43,10 @@ final class LoginViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         bindEvents()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = true
     }
     
     // MARK: Actions
@@ -79,7 +83,7 @@ final class LoginViewController: UIViewController {
         
         viewModel.handleSuccess = { [weak self] in
             DispatchQueue.main.async {
-                self?.coordinator?.start()
+                self?.coordinator?.goToHome()
             }
         }
     }

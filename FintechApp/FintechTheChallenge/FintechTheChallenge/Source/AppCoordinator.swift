@@ -7,36 +7,34 @@
 
 import UIKit
 
-final class AppCoordinator: Coordinator {
+final class LoginCoordinator: Coordinator {
     // MARK: Properties
     var navigationController: UINavigationController
     var childCoordinators: [Coordinator] = []
-    var parentCoordinator: Coordinator?
+    weak var parentCoordinator: Coordinator?
     var rootViewController: UIViewController?
     
     // MARK: Initialization
-    init() {
-        navigationController = UINavigationController()
+    init(navigationController: UINavigationController) {
+        self.navigationController = navigationController
+        print("==> INIT APP COORDINATOR")
+    }
+    
+    deinit {
+        print("==> DEINIT APP COORDINATOR")
     }
     
     // MARK: Methods
     func start() {
-        if UserSessionManager.shared.hasSession {
-            goToHome()
-        } else {
-            goToLogin()
-        }
-        UIApplication.switchRootViewController(navigationController, animated: true, completion: nil)
+        let loginViewController = LoginViewController()
+        loginViewController.coordinator = self
+        navigationController.pushViewController(loginViewController, animated: false)
     }
     
     func goToHome() {
-        let homeCoordinator = HomeCoordinator(navigationController)
-        homeCoordinator.start()
-    }
-    
-    func goToLogin() {
-        let loginViewController = LoginViewController()
-        navigationController = UINavigationController(rootViewController: loginViewController)
-        loginViewController.coordinator = self
+        let child = HomeCoordinator(navigationController)
+        child.parentCoordinator = self
+        childCoordinators.append(child)
+        child.start()
     }
 }

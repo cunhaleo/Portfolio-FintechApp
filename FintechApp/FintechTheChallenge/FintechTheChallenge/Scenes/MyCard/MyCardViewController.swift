@@ -9,7 +9,7 @@ import UIKit
 
 final class MyCardViewController: UIViewController {
     // MARK: Properties
-    var coordinator: HomeCoordinator?
+    weak var coordinator: HomeCoordinator?
     let viewModel: MyCardViewModel?
     var cardShowingFront: Bool = true {
         didSet {

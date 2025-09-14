@@ -30,7 +30,7 @@ extension HomeViewController.Layout {
 
 final class HomeViewController: BaseViewController, UIViewControllerTransitioningDelegate {
     // MARK: Properties
-    var coordinator: HomeCoordinator?
+    weak var coordinator: HomeCoordinator?
     weak var delegate: HomeViewControllerDelegate?
     let viewModel: HomeViewModel
     enum Layout {}
@@ -155,7 +155,7 @@ final class HomeViewController: BaseViewController, UIViewControllerTransitionin
     @objc func logout(sender: UIBarButtonItem) {
         UserSessionManager.shared.logout()
         DispatchQueue.main.async {
-            self.coordinator?.goToLoginIfHasNoSession()
+            self.coordinator?.goToLogin()
         }
     }
     

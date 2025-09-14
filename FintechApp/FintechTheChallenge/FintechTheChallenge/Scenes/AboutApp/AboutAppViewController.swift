@@ -9,7 +9,7 @@ import UIKit
 
 final class AboutAppViewController: UIViewController {
     // MARK: Properties
-    var coordinator: HomeCoordinator?
+    weak var coordinator: HomeCoordinator?
     
     // MARK: Outlets
     @IBOutlet weak var viewOutApp: UIView!

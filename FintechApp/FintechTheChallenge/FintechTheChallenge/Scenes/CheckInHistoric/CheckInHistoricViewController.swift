@@ -9,7 +9,7 @@ import UIKit
 
 final class CheckInHistoricViewController: BaseViewController {
     // MARK: Properties
-    var coordinator: HomeCoordinator?
+    weak var coordinator: HomeCoordinator?
     let viewModel = CheckInHistoricViewModel()
     
     // MARK: Outlets

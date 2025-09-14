@@ -16,3 +16,14 @@ protocol Coordinator: AnyObject {
     
     func start()
 }
+
+extension Coordinator {
+    func finishChild(_ child: Coordinator?) {
+        for (index, coordinator) in childCoordinators.enumerated() {
+            if coordinator === child {
+                childCoordinators.remove(at: index)
+                break
+            }
+        }
+    }
+}

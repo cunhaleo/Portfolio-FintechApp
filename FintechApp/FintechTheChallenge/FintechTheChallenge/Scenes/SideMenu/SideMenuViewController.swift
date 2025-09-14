@@ -13,7 +13,7 @@ enum Layout {
 
 final class SideMenuViewController: UIViewController {
 
-    var coordinator: HomeCoordinator?
+    weak var coordinator: HomeCoordinator?
 
     private lazy var scrollView: UIScrollView = {
         let scrowView = UIScrollView()

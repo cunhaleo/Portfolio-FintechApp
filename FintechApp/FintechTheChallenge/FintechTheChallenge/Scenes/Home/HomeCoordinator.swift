@@ -11,7 +11,7 @@ final class HomeCoordinator: Coordinator {
     // MARK: Properties
     var navigationController: UINavigationController
     var childCoordinators: [Coordinator] = []
-    var parentCoordinator: Coordinator?
+    weak var parentCoordinator: Coordinator?
     var rootViewController: UIViewController?
     
     // MARK: Initialization
@@ -21,14 +21,14 @@ final class HomeCoordinator: Coordinator {
     
     // MARK: Methods
     func start() {
-        let viewController = HomeContainerViewController()
-        viewController.coordinator = self
-        navigationController.pushViewController(viewController, animated: false)
+        let homeContainer = HomeContainerViewController()
+        navigationController.pushViewController(homeContainer, animated: false)
+        homeContainer.coordinator = self
     }
     
-    func goToLoginIfHasNoSession() {
-        let appCoordinator = AppCoordinator()
-        appCoordinator.start()
+    func goToLogin() {
+        parentCoordinator?.finishChild(self)
+        navigationController.popToRootViewController(animated: false)
     }
     
     func popToHome() {

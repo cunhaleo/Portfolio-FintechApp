@@ -16,7 +16,7 @@ final class HomeContainerViewController: BaseViewController {
     // MARK: Properties
     private let homeViewController = HomeViewController()
     private let sideMenuViewController = SideMenuViewController()
-    var coordinator: HomeCoordinator?
+    weak var coordinator: HomeCoordinator?
     private var sideMenuState: SideMenuState = .closed
     var navController: UINavigationController?
     
