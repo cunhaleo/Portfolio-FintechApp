@@ -10,16 +10,21 @@ import UIKit
 public extension UIViewController {
     // MARK: Methods
     func showProgressScreen() {
-        let progress = ProgressViewController()
-        progress.modalPresentationStyle = .fullScreen
+        let frame = UIScreen.main.bounds
+        let progress = ProgressView(frame: frame)
+        
         DispatchQueue.main.async {
-            self.present(progress, animated: true)
+            self.view.addSubview(progress)
         }
     }
     
     func dismissProgressScreen() {
-        DispatchQueue.main.async {
-            self.dismiss(animated: true, completion: nil)
+        for subview in self.view.subviews {
+            if subview is ProgressView {
+                DispatchQueue.main.async {
+                    subview.removeFromSuperview()
+                }
+            }
         }
     }
     

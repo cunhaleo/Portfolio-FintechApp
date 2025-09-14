@@ -71,7 +71,7 @@ final class LoginViewController: UIViewController {
     // MARK: Methods
     func bindEvents() {
         viewModel.shouldShowProgressScreen = { [weak self] shouldShow in
-            shouldShow ? self?.activityIndicator.startAnimating() : self?.activityIndicator.stopAnimating()
+            shouldShow ? self?.showProgressScreen() : self?.dismissProgressScreen()
             
         }
         
