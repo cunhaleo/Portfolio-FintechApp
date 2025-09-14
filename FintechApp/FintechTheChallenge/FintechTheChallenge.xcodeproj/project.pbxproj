@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85D5BC303D65A0C910316C10 /* Pods_FintechTheChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6152E8DF5E2B9D0C361DDA3 /* Pods_FintechTheChallenge.framework */; };
 		90767E8B2E4FB9BE0091BF62 /* ServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90767E8A2E4FB9BE0091BF62 /* ServiceMock.swift */; };
-		93411F54F3FA07B358EB8CC2 /* Pods_FintechTheChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EC3B376A6299C9031507273 /* Pods_FintechTheChallenge.framework */; };
 		FC08896327861745007FDD2F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC08896227861745007FDD2F /* HomeViewModel.swift */; };
 		FC088967278627A0007FDD2F /* MyCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC088965278627A0007FDD2F /* MyCardViewController.swift */; };
 		FC088968278627A0007FDD2F /* MyCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC088966278627A0007FDD2F /* MyCardViewController.xib */; };
@@ -28,8 +28,6 @@
 		FC184039288B3CAC00658CE2 /* SideMenuMacroItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC184038288B3CAC00658CE2 /* SideMenuMacroItemView.swift */; };
 		FC18403B288EC41F00658CE2 /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC18403A288EC41F00658CE2 /* ViewConfiguration.swift */; };
 		FC35B732275E576A002D0527 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35B730275E576A002D0527 /* ProgressViewController.swift */; };
-		FC35B733275E576A002D0527 /* ProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC35B731275E576A002D0527 /* ProgressViewController.xib */; };
-		FC35B735275E59BD002D0527 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = FC35B734275E59BD002D0527 /* loading.json */; };
 		FC35B738275E82F9002D0527 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35B737275E82F9002D0527 /* UserModel.swift */; };
 		FC35B73B275E9EB0002D0527 /* Extension+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35B73A275E9EB0002D0527 /* Extension+ViewController.swift */; };
 		FC35B73F275EBAFB002D0527 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35B73D275EBAFB002D0527 /* HomeViewController.swift */; };
@@ -95,13 +93,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3AAC36F445953EC9655805BF /* Pods-FintechTheChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FintechTheChallenge.debug.xcconfig"; path = "Target Support Files/Pods-FintechTheChallenge/Pods-FintechTheChallenge.debug.xcconfig"; sourceTree = "<group>"; };
-		3EC3B376A6299C9031507273 /* Pods_FintechTheChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FintechTheChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		87FA20883C9CA83993C6A4A8 /* Pods_GerencianetChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GerencianetChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E72C999304B392A0926CA4 /* Pods-FintechTheChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FintechTheChallenge.release.xcconfig"; path = "Target Support Files/Pods-FintechTheChallenge/Pods-FintechTheChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		90767E8A2E4FB9BE0091BF62 /* ServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceMock.swift; sourceTree = "<group>"; };
-		C656D4991FF00F27E0123B09 /* Pods-FintechTheChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FintechTheChallenge.release.xcconfig"; path = "Target Support Files/Pods-FintechTheChallenge/Pods-FintechTheChallenge.release.xcconfig"; sourceTree = "<group>"; };
-		CE8A9BA5BD1729CAC0A1DDE4 /* Pods-GerencianetChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GerencianetChallenge.debug.xcconfig"; path = "Target Support Files/Pods-GerencianetChallenge/Pods-GerencianetChallenge.debug.xcconfig"; sourceTree = "<group>"; };
-		D65E061DFF9A1A31DA18B2B8 /* Pods-GerencianetChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GerencianetChallenge.release.xcconfig"; path = "Target Support Files/Pods-GerencianetChallenge/Pods-GerencianetChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		B6152E8DF5E2B9D0C361DDA3 /* Pods_FintechTheChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FintechTheChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4CE67AB389C963B248146D0 /* Pods-FintechTheChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FintechTheChallenge.debug.xcconfig"; path = "Target Support Files/Pods-FintechTheChallenge/Pods-FintechTheChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		FC08896227861745007FDD2F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		FC088965278627A0007FDD2F /* MyCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardViewController.swift; sourceTree = "<group>"; };
 		FC088966278627A0007FDD2F /* MyCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCardViewController.xib; sourceTree = "<group>"; };
@@ -121,8 +116,6 @@
 		FC184038288B3CAC00658CE2 /* SideMenuMacroItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuMacroItemView.swift; sourceTree = "<group>"; };
 		FC18403A288EC41F00658CE2 /* ViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfiguration.swift; sourceTree = "<group>"; };
 		FC35B730275E576A002D0527 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
-		FC35B731275E576A002D0527 /* ProgressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressViewController.xib; sourceTree = "<group>"; };
-		FC35B734275E59BD002D0527 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		FC35B737275E82F9002D0527 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		FC35B73A275E9EB0002D0527 /* Extension+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+ViewController.swift"; sourceTree = "<group>"; };
 		FC35B73D275EBAFB002D0527 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -194,31 +187,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93411F54F3FA07B358EB8CC2 /* Pods_FintechTheChallenge.framework in Frameworks */,
+				85D5BC303D65A0C910316C10 /* Pods_FintechTheChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2F969FE35AC336FF7FC4FD59 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				87FA20883C9CA83993C6A4A8 /* Pods_GerencianetChallenge.framework */,
-				3EC3B376A6299C9031507273 /* Pods_FintechTheChallenge.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		5B3C1E31658247A3F4E75D1A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CE8A9BA5BD1729CAC0A1DDE4 /* Pods-GerencianetChallenge.debug.xcconfig */,
-				D65E061DFF9A1A31DA18B2B8 /* Pods-GerencianetChallenge.release.xcconfig */,
-				3AAC36F445953EC9655805BF /* Pods-FintechTheChallenge.debug.xcconfig */,
-				C656D4991FF00F27E0123B09 /* Pods-FintechTheChallenge.release.xcconfig */,
+				E4CE67AB389C963B248146D0 /* Pods-FintechTheChallenge.debug.xcconfig */,
+				79E72C999304B392A0926CA4 /* Pods-FintechTheChallenge.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E11277C82AEB3D48866D999D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6152E8DF5E2B9D0C361DDA3 /* Pods_FintechTheChallenge.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		FC08896427862785007FDD2F /* MyCard */ = {
@@ -304,9 +294,7 @@
 		FC35B736275E64D3002D0527 /* Progress */ = {
 			isa = PBXGroup;
 			children = (
-				FC35B734275E59BD002D0527 /* loading.json */,
 				FC35B730275E576A002D0527 /* ProgressViewController.swift */,
-				FC35B731275E576A002D0527 /* ProgressViewController.xib */,
 			);
 			path = Progress;
 			sourceTree = "<group>";
@@ -421,8 +409,8 @@
 			children = (
 				FC9518602759033600533F91 /* FintechTheChallenge */,
 				FC95185F2759033600533F91 /* Products */,
-				2F969FE35AC336FF7FC4FD59 /* Frameworks */,
 				5B3C1E31658247A3F4E75D1A /* Pods */,
+				E11277C82AEB3D48866D999D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -586,12 +574,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC9518722759033700533F91 /* Build configuration list for PBXNativeTarget "FintechTheChallenge" */;
 			buildPhases = (
-				C1F22CA50B28C836582EDFD1 /* [CP] Check Pods Manifest.lock */,
+				C72059F73BC725BF7983BC4B /* [CP] Check Pods Manifest.lock */,
 				FC95185A2759033600533F91 /* Sources */,
 				FC95185B2759033600533F91 /* Frameworks */,
 				FC95185C2759033600533F91 /* Resources */,
 				FC9C2F19289D879B0037BFE4 /* ShellScript */,
-				53E79037BD5416B4D427594D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -653,7 +640,6 @@
 				FC95187E275908A100533F91 /* LoginViewController.xib in Resources */,
 				FC76E2DB28980CDC00795CD0 /* Inter-Regular.otf in Resources */,
 				FC95186B2759033700533F91 /* Assets.xcassets in Resources */,
-				FC35B733275E576A002D0527 /* ProgressViewController.xib in Resources */,
 				FC76E2E628980CDC00795CD0 /* Inter-Italic.otf in Resources */,
 				FC088968278627A0007FDD2F /* MyCardViewController.xib in Resources */,
 				FC16740227E413F80009F3B9 /* ConnectionErrorBottomSheet.xib in Resources */,
@@ -666,7 +652,6 @@
 				FC76E2D928980CDC00795CD0 /* Inter-Bold.otf in Resources */,
 				FC76E2E028980CDC00795CD0 /* Inter-ExtraLightItalic.otf in Resources */,
 				FC76E2E528980CDC00795CD0 /* Inter-Black.otf in Resources */,
-				FC35B735275E59BD002D0527 /* loading.json in Resources */,
 				FC76E2E128980CDC00795CD0 /* Inter-Medium.otf in Resources */,
 				FC35B740275EBAFB002D0527 /* HomeViewController.xib in Resources */,
 				FC76E2EA28980CDC00795CD0 /* Inter-ExtraBoldItalic.otf in Resources */,
@@ -681,24 +666,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		53E79037BD5416B4D427594D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FintechTheChallenge/Pods-FintechTheChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FintechTheChallenge/Pods-FintechTheChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FintechTheChallenge/Pods-FintechTheChallenge-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C1F22CA50B28C836582EDFD1 /* [CP] Check Pods Manifest.lock */ = {
+		C72059F73BC725BF7983BC4B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -928,7 +896,7 @@
 		};
 		FC9518732759033700533F91 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3AAC36F445953EC9655805BF /* Pods-FintechTheChallenge.debug.xcconfig */;
+			baseConfigurationReference = E4CE67AB389C963B248146D0 /* Pods-FintechTheChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -958,7 +926,7 @@
 		};
 		FC9518742759033700533F91 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C656D4991FF00F27E0123B09 /* Pods-FintechTheChallenge.release.xcconfig */;
+			baseConfigurationReference = 79E72C999304B392A0926CA4 /* Pods-FintechTheChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

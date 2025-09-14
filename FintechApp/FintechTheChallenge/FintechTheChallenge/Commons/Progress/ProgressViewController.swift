@@ -9,7 +9,7 @@ import UIKit
 
 final class ProgressView: UIView {
     
-    let activityIndicator: UIActivityIndicatorView = {
+    private lazy var activityIndicator: UIActivityIndicatorView = {
         let indicator = UIActivityIndicatorView()
         indicator.translatesAutoresizingMaskIntoConstraints = false
         indicator.hidesWhenStopped = true
@@ -36,7 +36,6 @@ final class ProgressView: UIView {
     
     private func buildLayout() {
         addSubview(activityIndicator)
-        
         NSLayoutConstraint.activate([
             activityIndicator.centerXAnchor.constraint(equalTo: centerXAnchor),
             activityIndicator.centerYAnchor.constraint(equalTo: centerYAnchor)
