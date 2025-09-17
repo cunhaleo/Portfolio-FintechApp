@@ -95,9 +95,9 @@ final class HomeViewController: BaseViewController, UIViewControllerTransitionin
     }
     
     private func setupHomeNavigationBar() {
-        let logo = UIImage(named: "smallLogoFintech")
+        let logo = UIImage(named: "fintechLogoSquared")
         let imageView = UIImageView(image: logo)
-        imageView.contentMode = .scaleAspectFill
+        imageView.contentMode = .scaleAspectFit
         self.navigationItem.titleView = imageView
         self.navigationController?.navigationBar.barTintColor = UIColor.primaryColor()
         self.navigationController?.navigationBar.backgroundColor = UIColor.primaryColor()

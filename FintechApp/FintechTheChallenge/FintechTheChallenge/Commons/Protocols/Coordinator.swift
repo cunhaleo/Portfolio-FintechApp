@@ -26,4 +26,13 @@ extension Coordinator {
             }
         }
     }
+    
+    func popToRootViewController(animated: Bool) {
+        guard let rootViewController = rootViewController else { return }
+        if navigationController.viewControllers.contains(rootViewController) {
+            navigationController.popToViewController(rootViewController, animated: animated)
+        } else {
+            navigationController.viewControllers.append(rootViewController)
+        }
+    }
 }

@@ -17,18 +17,22 @@ final class LoginCoordinator: Coordinator {
     // MARK: Initialization
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
-        print("==> INIT APP COORDINATOR")
     }
     
-    deinit {
-        print("==> DEINIT APP COORDINATOR")
-    }
     
     // MARK: Methods
     func start() {
         let loginViewController = LoginViewController()
         loginViewController.coordinator = self
-        navigationController.pushViewController(loginViewController, animated: false)
+        rootViewController = loginViewController
+        UserSessionManager.shared.hasSession ? goToHome() : goToLogin()
+    }
+    
+    func goToLogin() {
+        guard let rootViewController = rootViewController else { return }
+        DispatchQueue.main.async {
+            self.navigationController.pushViewController(rootViewController, animated: false)
+        }
     }
     
     func goToHome() {
