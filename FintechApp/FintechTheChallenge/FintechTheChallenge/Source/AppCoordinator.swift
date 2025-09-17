@@ -22,18 +22,17 @@ final class LoginCoordinator: Coordinator {
     
     // MARK: Methods
     func start() {
-        if UserSessionManager.shared.hasSession {
-            goToHome()
-        }
-        else {
-            goToLogin()
-        }
+        let loginViewController = LoginViewController()
+        loginViewController.coordinator = self
+        rootViewController = loginViewController
+        UserSessionManager.shared.hasSession ? goToHome() : goToLogin()
     }
     
     func goToLogin() {
-        let loginViewController = LoginViewController()
-        loginViewController.coordinator = self
-        navigationController.pushViewController(loginViewController, animated: false)
+        guard let rootViewController = rootViewController else { return }
+        DispatchQueue.main.async {
+            self.navigationController.pushViewController(rootViewController, animated: false)
+        }
     }
     
     func goToHome() {

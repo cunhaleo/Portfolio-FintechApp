@@ -27,18 +27,20 @@ final class HomeCoordinator: Coordinator {
             self.navigationController.pushViewController(homeContainer, animated: false)
         }
         homeContainer.coordinator = self
+        rootViewController = homeContainer
     }
     
     func goToLogin() {
         parentCoordinator?.finishChild(self)
         DispatchQueue.main.async {
             self.addLogoutAnimation()
-            self.navigationController.popToRootViewController(animated: false)
+            self.parentCoordinator?.popToRootViewController(animated: false)
         }
     }
     
     func popToHome() {
-        navigationController.popToRootViewController(animated: false)
+        guard let home = rootViewController else { return }
+        navigationController.popToViewController(home, animated: true)
     }
     
     func goToMyCardViewController() {
